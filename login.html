@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My first WebPage</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    </head>
+
+    <body>
+        
+        <div id="navbar"></div>
+        <script>
+            $(function(){
+                $("#navbar").load("navbar.html");
+            });
+        </script>
+
+        <!-- Login Page -->
+
+        <div class="container" role="dialog">
+
+            <div class="modal-dialog">
+                
+                <div class="modal-content">
+                    
+                    <div class="modal-header" >
+                        
+                        <form>
+                            <div class="modal-header">
+                        
+                                <h3 class="modal-title text-center" >Login</h3>
+        
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="remember"> Remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+                                
+
+                        </form>
+                    
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
